@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <!--
+         引入React的核心库 用来创建React虚拟对象
+         不依赖宿主环境(网页),只依赖原生JS语言
+    -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- 用以将配合核心库进行网页端开发 -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script>
+        
+        // 创建一个React元素，称作虚拟DOM，本质上是一个对象
+        // 参数1 创建标签名
+        // 参数2 属性对象
+        // 参数3 元素的子节点 
+        // ...后面的所有参数都是元素的子节点
+        let h1 = React.createElement('h1',{
+            class:'dom'
+        },'ssss')
+    
+        // 使用render函数将React元素渲染到页面
+        // ReactDOM是负责把React对象转换为真实的DOM
+        ReactDOM.render(h1,app);
+    
+    
+    </script>
+</body>
+</html>

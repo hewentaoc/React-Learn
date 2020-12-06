@@ -1,0 +1,20 @@
+.menu-content  {
+    width: 100%;
+    padding: 0;
+}
+
+.menu-content li{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+}
+.menu-content li:hover {
+    background-color: #fff;
+    color:teal ;
+}
+.menu-content li a {
+    color: inherit;
+    text-decoration: none;
+}

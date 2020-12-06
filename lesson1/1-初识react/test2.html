@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+     <!--
+         引入React的核心库 用来创建React虚拟对象
+         不依赖宿主环境(网页),只依赖原生JS语言
+    -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- 用以将配合核心库进行网页端开发 -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- 将JSX语法解析为JS JS的扩展语法，需要使用babel进行转义 -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- 将script标签的类型写为text/babel 可以不被浏览器解析 只被babel进行解析 -->
+    <script type="text/babel">
+    // 在使用JSX语法创建React元素的时候,就不用再使用React.createElement()进行创建元素
+    // 创建的h1依然是个React元素，称作虚拟DOM，本质上是一个对象
+        var h1 = <h1>我是h1标签 <span>123</span></h1>;
+        console.log(h1)
+        ReactDOM.render(<h1>我是h1标签 <span>123</span></h1>,app)
+    </script>
+
+</body>
+</html>

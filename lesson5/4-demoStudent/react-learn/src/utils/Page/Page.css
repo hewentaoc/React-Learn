@@ -1,0 +1,42 @@
+.item {
+    border: 1px solid gray;
+    padding:6px 8px;
+    cursor: pointer;
+    margin: 2px;
+    user-select: none;
+    color: #000;
+    display: inline-block;
+}
+
+.item.disabled {
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.fitem {
+    margin:0 5px;
+    font-size: 19px;
+}
+
+.number {
+    padding:6px 12px;
+    border: 1px solid gray;
+    margin: 2px;
+    user-select: none;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+}
+.number.active {
+    color: #f40;
+    border: none;
+    cursor: auto;
+}
+
+.mes {
+    margin:0 auto 30px;
+    text-align: left;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
